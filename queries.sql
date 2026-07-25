@@ -80,3 +80,5 @@ group by i.name having count(c.course_id)>1;
 select count(e.student_id), c.course_name from enrollments e
 join courses c on c.course_id = e.course_id 
 group by c.course_name having count(e.student_id)>1;
+-- 31
+select * from students where 20<=age<=25 order by
